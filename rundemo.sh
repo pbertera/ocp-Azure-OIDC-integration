@@ -43,7 +43,7 @@ pei $OCPI create manifests --dir "$INSTALL_DIR"
 
 pi '# Create the Azure Storage Container where the OIDC files will be stored'
 pi '# The cluster RG can be taken from'
-pi "# $INSALL_DIR/manifests/cluster-infrastructure-02-config.yml"
+pi "# $INSTALL_DIR/manifests/cluster-infrastructure-02-config.yml"
 pei 'RESOURCE_GROUP="pbertera-oidc-rg" #HINT: you can get the cluster RG with `jq -r .infraID install-dir/metadata.json`'
 pei 'LOCATION="westeurope"'
 pei 'AZURE_STORAGE_ACCOUNT="oidcissuer$(openssl rand -hex 4)"'
