@@ -1,0 +1,1 @@
+# ocp-Azure-OIDC-integration
